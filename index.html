@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>通信标签展示</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/multilevelmenu.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-4.2.2.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/yiliao.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/swiper-4.2.2.min.js"></script>
+    <style>
+    .swiper-button-next {
+        background-image: url(./img/right.png);
+    }
+
+    .swiper-button-prev {
+        background-image: url(./img/left.png);
+    }
+
+    hr {
+        border-width: 0;
+        height: 1px;
+        background: #fff;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <!--  -------------------- 页面 -------------------- -->
+    <div id="pt-main" class="pt-perspective">
+        <!-- 城市全景 -->
+        <div class="pt-page pt-page-quan">
+            <div class="banner">
+                <div class="title">城市全景</div>
+            </div>
+            <img class="bg" src="./img/城市全景.jpg" alt="">
+            <div class="box quan-fgf">
+                <div class="title">分光房</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box quan-dxg">
+                <div class="title">电线杆</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box quan-zfz">
+                <div class="title">直放站</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box quan-ydds">
+                <div class="title">移动大厦</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box quan-gjx">
+                <div class="title">光交箱</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box quan-jxgl">
+                <div class="title">井下光缆</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box quan-jt">
+                <div class="title">家庭</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box quan-jz">
+                <div class="title">基站</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------分光房-------------------- -->
+        <div class="pt-page pt-page-fenguang">
+            <div class="banner">
+                <img class="back back-fenguang" src="./img/back.png" alt="">
+                <div class="title">分光房</div>
+            </div>
+            <img class="bg" src="./img/分光房.jpg" alt="">
+            <div class="box fenguang-wq">
+                <div class="title">尾纤网线标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box fenguang-jj">
+                <div class="title">机架机柜标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box fenguang-kx">
+                <div class="title">馈线吊牌标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------分光房-------------------- -->
+
+        <!--  --------------------光交箱-------------------- -->
+        <div class="pt-page pt-page-guangjiao">
+            <div class="banner">
+                <img class="back back-guangjiao" src="./img/back.png" alt="">
+                <div class="title">光交箱</div>
+            </div>
+            <img class="bg" src="./img/光交箱.jpg" alt="">
+            <div class="box guangjiao-jj">
+                <div class="title">机架机柜标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box guangjiao-wq">
+                <div class="title">尾纤网线标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------光交箱-------------------- -->
+
+        <!--  --------------------井下光缆-------------------- -->
+        <div class="pt-page pt-page-jingxia">
+            <div class="banner">
+                <img class="back back-jingxia" src="./img/back.png" alt="">
+                <div class="title">井下光缆</div>
+            </div>
+            <img class="bg" src="./img/井下光缆.jpg" alt="">
+            <div class="box jingxia-dp">
+                <div class="title">吊牌标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------井下光缆-------------------- -->
+
+        <!--  --------------------电线杆-------------------- -->
+        <div class="pt-page pt-page-dianxian">
+            <div class="banner">
+                <img class="back back-dianxian" src="./img/back.png" alt="">
+                <div class="title">电线杆</div>
+            </div>
+            <img class="bg" src="./img/电线光缆架.jpg" alt="">
+            <div class="box dianxian-dp">
+                <div class="title">吊牌标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------电线杆-------------------- -->
+
+        <!--  --------------------家庭-------------------- -->
+        <div class="pt-page pt-page-jiating">
+            <div class="banner">
+                <img class="back back-jiating" src="./img/back.png" alt="">
+                <div class="title">家庭</div>
+            </div>
+            <img class="bg" src="./img/家庭入户大厅.jpg" alt="">
+            <div class="box jiating-jy">
+                <div class="title">家用弱电柜</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-jiayong">
+            <div class="banner">
+                <img class="back back-jiayong" src="./img/back.png" alt="">
+                <div class="title">家用弱电柜</div>
+            </div>
+            <img class="bg" src="./img/家庭弱电箱.jpg" alt="">
+            <div class="box jiayong-sb">
+                <div class="title">设备平面标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jiayong-xl">
+                <div class="title">尾纤标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jiayong-kk">
+                <div class="title">空开标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------家庭-------------------- -->
+
+        <!--  --------------------直放站-------------------- -->
+        <div class="pt-page pt-page-zhifang">
+            <div class="banner">
+                <img class="back back-zhifang" src="./img/back.png" alt="">
+                <div class="title">直放站</div>
+            </div>
+            <img class="bg" src="./img/直放站.jpg" alt="">
+            <div class="box zhifang-sb">
+                <div class="title">设备标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zhifang-dp">
+                <div class="title">吊牌</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zhifang-nb">
+                <div class="title">直放站内部</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-zhifang-neibu">
+            <div class="banner">
+                <img class="back back-zhifang-neibu" src="./img/back.png" alt="">
+                <div class="title">直放站内部</div>
+            </div>
+            <img class="bg" src="./img/直放站内部.jpg" alt="">
+            <div class="box zhifang-neibu-wq">
+                <div class="title">尾纤标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zhifang-neibu-sb">
+                <div class="title">设备平面标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zhifang-neibu-dp">
+                <div class="title">吊牌标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------直放站-------------------- -->
+
+        <!--  --------------------基站-------------------- -->
+        <div class="pt-page pt-page-jizhan">
+            <div class="banner">
+                <img class="back back-jizhan" src="./img/back.png" alt="">
+                <div class="title">基站</div>
+            </div>
+            <img class="bg" src="./img/基站.jpg" alt="">
+            <div class="box jizhan-nb">
+                <div class="title">基站内部</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-jizhan-neibu">
+            <div class="banner">
+                <img class="back back-jizhan-neibu" src="./img/back.png" alt="">
+                <div class="title">基站内部</div>
+            </div>
+            <img class="bg" src="./img/基站内部.jpg" alt="">
+            <div class="box jizhan-neibu-dcz">
+                <div class="title">蓄电池组</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jizhan-neibu-pdg">
+                <div class="title">配电柜</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jizhan-neibu-hj">
+                <div class="title">环境标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jizhan-neibu-zxj">
+                <div class="title">走线架</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jizhan-neibu-wq">
+                <div class="title">尾纤网线</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jizhan-neibu-jg">
+                <div class="title">机柜机架</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-xudian2">
+            <div class="banner">
+                <img class="back back-xudian2" src="./img/back.png" alt="">
+                <div class="title">蓄电池组</div>
+            </div>
+            <img class="bg" src="./img/蓄电池组.jpg" alt="">
+            <div class="box xudian-sb">
+                <div class="title">设备标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box xudian-gp">
+                <div class="title">挂牌标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-zouxian2">
+            <div class="banner">
+                <img class="back back-zouxian2" src="./img/back.png" alt="">
+                <div class="title">走线架</div>
+            </div>
+            <img class="bg" src="./img/走线架.jpg" alt="">
+            <div class="box zouxian-zxj">
+                <div class="title">走线架标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zouxian-gp">
+                <div class="title">挂牌标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-weiqian2">
+            <div class="banner">
+                <img class="back back-weiqian2" src="./img/back.png" alt="">
+                <div class="title">尾纤网线</div>
+            </div>
+            <img class="bg" src="./img/尾纤标签.jpg" alt="">
+            <div class="box weiqian-wq">
+                <div class="title">尾纤标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box weiqian-jg">
+                <div class="title">机柜标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-jigui2">
+            <div class="banner">
+                <img class="back back-jigui2" src="./img/back.png" alt="">
+                <div class="title">机架机柜</div>
+            </div>
+            <img class="bg" src="./img/机架机柜.jpg" alt="">
+            <div class="box jigui-jg">
+                <div class="title">机柜标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jigui-sb">
+                <div class="title">设备标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jigui-db">
+                <div class="title">地标标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------基站-------------------- -->
+
+        <!--  --------------------移动大厦-------------------- -->
+        <div class="pt-page pt-page-yidong">
+            <div class="banner">
+                <img class="back back-yidong" src="./img/back.png" alt="">
+                <div class="title">移动大厦</div>
+            </div>
+            <img class="bg" src="./img/移动总部大厦.jpg" alt="">
+            <div class="box yidong-sj">
+                <div class="title">数据机房</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box yidong-bgs">
+                <div class="title">办公室</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box yidong-dt">
+                <div class="title">移动大厅</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-bangong">
+            <div class="banner">
+                <img class="back back-bangong" src="./img/back.png" alt="">
+                <div class="title">办公室</div>
+            </div>
+            <img class="bg" src="./img/办公室.jpg" alt="">
+            <div class="box bangong-zc">
+                <div class="title">资产标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box bangong-kg">
+                <div class="title">开关标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-dating">
+            <div class="banner">
+                <img class="back back-dating" src="./img/back.png" alt="">
+                <div class="title">移动大厅</div>
+            </div>
+            <img class="bg" src="./img/移动营业大厅.jpg" alt="">
+            <div class="box dating-zc">
+                <div class="title">资产标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box dating-kg">
+                <div class="title">开关标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box dating-hj">
+                <div class="title">环境标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-shuju">
+            <div class="banner">
+                <img class="back back-shuju" src="./img/back.png" alt="">
+                <div class="title">数据机房</div>
+            </div>
+            <img class="bg" src="./img/数据机房.jpg" alt="">
+            <div class="box shuju-hj">
+                <div class="title">环境标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box shuju-wq">
+                <div class="title">尾纤网线</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box shuju-jf">
+                <div class="title">机房供电处</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box shuju-jks">
+                <div class="title">监控室</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box shuju-zxj">
+                <div class="title">走线架</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box shuju-jj">
+                <div class="title">机架机柜</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box shuju-ddf">
+                <div class="title">DDF架</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-jiankong">
+            <div class="banner">
+                <img class="back back-jiankong" src="./img/back.png" alt="">
+                <div class="title">监控室</div>
+            </div>
+            <img class="bg" src="./img/监控室.jpg" alt="">
+            <div class="box jiankong-zc">
+                <div class="title">资产标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jiankong-kg">
+                <div class="title">开关标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jiankong-xl">
+                <div class="title">线缆标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-gongdian">
+            <div class="banner">
+                <img class="back back-gongdian" src="./img/back.png" alt="">
+                <div class="title">机房供电处</div>
+            </div>
+            <img class="bg" src="./img/机房供电处.jpg" alt="">
+            <div class="box gongdian-pd">
+                <div class="title">配电柜</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box gongdian-xdc">
+                <div class="title">蓄电池组</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-xudian">
+            <div class="banner">
+                <img class="back back-xudian" src="./img/back.png" alt="">
+                <div class="title">蓄电池组</div>
+            </div>
+            <img class="bg" src="./img/蓄电池组.jpg" alt="">
+            <div class="box xudian-sb">
+                <div class="title">设备标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box xudian-gp">
+                <div class="title">挂牌标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-jigui">
+            <div class="banner">
+                <img class="back back-jigui" src="./img/back.png" alt="">
+                <div class="title">机架机柜</div>
+            </div>
+            <img class="bg" src="./img/机架机柜.jpg" alt="">
+            <div class="box jigui-jg">
+                <div class="title">机柜标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jigui-sb">
+                <div class="title">设备标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jigui-db">
+                <div class="title">地标标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-weiqian">
+            <div class="banner">
+                <img class="back back-weiqian" src="./img/back.png" alt="">
+                <div class="title">尾纤网线</div>
+            </div>
+            <img class="bg" src="./img/尾纤标签.jpg" alt="">
+            <div class="box weiqian-wq">
+                <div class="title">尾纤标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box weiqian-jg">
+                <div class="title">机柜标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-ddf">
+            <div class="banner">
+                <img class="back back-ddf" src="./img/back.png" alt="">
+                <div class="title">DDF架</div>
+            </div>
+            <img class="bg" src="./img/DDF架标签.jpg" alt="">
+            <div class="box ddf-ddf">
+                <div class="title">DDF架标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <div class="pt-page pt-page-zouxian">
+            <div class="banner">
+                <img class="back back-zouxian" src="./img/back.png" alt="">
+                <div class="title">走线架</div>
+            </div>
+            <img class="bg" src="./img/走线架.jpg" alt="">
+            <div class="box zouxian-zxj">
+                <div class="title">走线架标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zouxian-gp">
+                <div class="title">挂牌标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------移动大厦-------------------- -->
+    </div>
+    <!--  -------------------- 页面 -------------------- -->
+
+
+
+    <!--  -------------------- 标签 -------------------- -->
+    <div>
+        <!-- 电线杆 -->
+        <div class="mask mask-dianxian-dp">
+            <div class="swiper-container-dianxian-dp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">吊牌标签</div>
+                        <div class="box">
+                            <img src="./tag/86-54.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>86mm-54mm（硬）</div>
+                            <div>•<span>标签材质：</span>聚氯乙烯PVC材质</div>
+                            <div>•<span>标签要素：</span>光缆名称、光缆规格、二维码</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 井下光缆 -->
+        <div class="mask mask-jingxia-dp">
+            <div class="swiper-container-jingxia-dp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">吊牌标签</div>
+                        <div class="box">
+                            <img src="./tag/5070.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>50mm×70mm</div>
+                            <div>•<span>标签材质：</span>高密度聚乙烯薄膜</div>
+                            <div>•<span>标签要素：</span>光缆名称、光缆规格、二维码</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 家用弱电柜 -->
+        <div class="mask mask-jiayong-sb">
+            <div class="swiper-container-jiayong-sb sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">设备平面标签</div>
+                        <div class="box">
+                            <img src="./tag/TCM25-75.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*75mm</div>
+                            <div>•<span>标签材质：</span>白底，蓝绿色移动LOGO，材料PM-01</div>
+                            <div>•<span>标签要素：</span>设备名称、设备编号、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-jiayong-xl">
+            <div class="swiper-container-jiayong-xl sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">尾纤标签</div>
+                        <div class="box">
+                            <img src="./tag/02F.png" alt="" style="width: 50%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*38mm+40mm</div>
+                            <div>•<span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•<span>标签颜色：</span>
+                                <img src="./tag/颜色1.png" alt="">
+                                <img src="./tag/颜色2.png" alt="">
+                                <img src="./tag/颜色3.png" alt="">
+                                <img src="./tag/颜色4.png" alt="">
+                                <img src="./tag/颜色5.png" alt="">
+                                <img src="./tag/颜色6.png" alt="">
+                                <img src="./tag/颜色7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-jiayong-kk">
+            <div class="swiper-container-jiayong-kk sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">空开标签</div>
+                        <div class="box">
+                            <img src="./tag/20-15.png" alt="" style="width: 30%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>20mm×15mm</div>
+                            <div>•<span>标签材质：</span>白底聚丙烯薄膜，材料PM-01</div>
+                            <div>•<span>标签要素：</span>ODM/DDM序号，从上至下，从左至右，从01开始编号</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 分光房 -->
+        <div class="mask mask-fenguang-wq">
+            <div class="swiper-container-fenguang-wq sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">尾纤网线标签</div>
+                        <div class="box">
+                            <img src="./tag/02F.png" alt="" style="width: 50%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*38mm+40mm</div>
+                            <div>•<span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•<span>标签颜色：</span>
+                                <img src="./tag/颜色1.png" alt="">
+                                <img src="./tag/颜色2.png" alt="">
+                                <img src="./tag/颜色3.png" alt="">
+                                <img src="./tag/颜色4.png" alt="">
+                                <img src="./tag/颜色5.png" alt="">
+                                <img src="./tag/颜色6.png" alt="">
+                                <img src="./tag/颜色7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-fenguang-kx">
+            <div class="swiper-container-fenguang-kx sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">馈线吊牌标签</div>
+                        <div class="box">
+                            <img src="./tag/45-60.png" alt="" style="width: 30%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm×60mm（对折标签）</div>
+                            <div>•<span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•<span>标签要素：</span>电路名称、电路编号或条码、端口连接端子信息</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-fenguang-jj">
+            <div class="swiper-container-fenguang-jj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">机架机柜标签</div>
+                        <div class="box">
+                            <img src="./tag/TCM25-75.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*75mm</div>
+                            <div>•<span>标签材质：</span>白底，蓝绿色移动LOGO，材料PM-01</div>
+                            <div>•<span>标签要素：</span>设备名称、设备编号、二维码（可选）</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">机架机柜标签</div>
+                        <div class="box">
+                            <img src="./tag/45100.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm*100mm</div>
+                            <div>•<span>标签材质：</span>深蓝底色，浅蓝底色，材料PM-01</div>
+                            <div>•<span>标签要素：</span>机房名称、机房编码、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 光交箱 -->
+        <div class="mask mask-guangjiao-jj">
+            <div class="swiper-container-guangjiao-jj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">机架机柜标签</div>
+                        <div class="box">
+                            <img src="./tag/45100.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm*100mm</div>
+                            <div>•<span>标签材质：</span>深蓝底色，浅蓝底色，材料PM-01</div>
+                            <div>•<span>标签要素：</span>机房名称、机房编码、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-guangjiao-wq">
+            <div class="swiper-container-guangjiao-wq sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">尾纤网线标签</div>
+                        <div class="box">
+                            <img src="./tag/02F.png" alt="" style="width: 50%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*38mm+40mm</div>
+                            <div>•<span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•<span>标签颜色：</span>
+                                <img src="./tag/颜色1.png" alt="">
+                                <img src="./tag/颜色2.png" alt="">
+                                <img src="./tag/颜色3.png" alt="">
+                                <img src="./tag/颜色4.png" alt="">
+                                <img src="./tag/颜色5.png" alt="">
+                                <img src="./tag/颜色6.png" alt="">
+                                <img src="./tag/颜色7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 直放站 -->
+        <div class="mask mask-zhifang-sb">
+            <div class="swiper-container-zhifang-sb sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">设备标签</div>
+                        <div class="box">
+                            <img src="./tag/TCM25-75.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*75mm</div>
+                            <div>•<span>标签材质：</span>白底，蓝绿色移动LOGO，材料PM-01</div>
+                            <div>•<span>标签要素：</span>设备名称、设备编号、二维码（可选）</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">设备标签</div>
+                        <div class="box">
+                            <img src="./tag/45100.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm*100mm</div>
+                            <div>•<span>标签材质：</span>深蓝底色，浅蓝底色，材料PM-01</div>
+                            <div>•<span>标签要素：</span>机房名称、机房编码、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-zhifang-dp">
+            <div class="swiper-container-zhifang-dp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">吊牌标签</div>
+                        <div class="box">
+                            <img src="./tag/45-60.png" alt="" style="width: 30%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm×60mm（对折标签）</div>
+                            <div>•<span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•<span>标签要素：</span>电路名称、电路编号或条码、端口连接端子信息</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-zhifang-neibu-sb">
+            <div class="swiper-container-zhifang-neibu-sb sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">设备平面标签</div>
+                        <div class="box">
+                            <img src="./tag/TCM25-75.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*75mm</div>
+                            <div>•<span>标签材质：</span>白底，蓝绿色移动LOGO，材料PM-01</div>
+                            <div>•<span>标签要素：</span>设备名称、设备编号、二维码（可选）</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">设备平面标签</div>
+                        <div class="box">
+                            <img src="./tag/45100.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm*100mm</div>
+                            <div>•<span>标签材质：</span>深蓝底色，浅蓝底色，材料PM-01</div>
+                            <div>•<span>标签要素：</span>机房名称、机房编码、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-zhifang-neibu-dp">
+            <div class="swiper-container-zhifang-neibu-dp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">吊牌标签</div>
+                        <div class="box">
+                            <img src="./tag/45-60.png" alt="" style="width: 30%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm×60mm（对折标签）</div>
+                            <div>•<span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•<span>标签要素：</span>电路名称、电路编号或条码、端口连接端子信息</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-zhifang-neibu-wq">
+            <div class="swiper-container-zhifang-neibu-wq sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">尾纤标签</div>
+                        <div class="box">
+                            <img src="./tag/02F.png" alt="" style="width: 50%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*38mm+40mm</div>
+                            <div>•<span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•<span>标签颜色：</span>
+                                <img src="./tag/颜色1.png" alt="">
+                                <img src="./tag/颜色2.png" alt="">
+                                <img src="./tag/颜色3.png" alt="">
+                                <img src="./tag/颜色4.png" alt="">
+                                <img src="./tag/颜色5.png" alt="">
+                                <img src="./tag/颜色6.png" alt="">
+                                <img src="./tag/颜色7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 基站 -->
+        <div class="mask mask-jizhan-pdg">
+            <div class="swiper-container-jizhan-pdg sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">配电柜标签</div>
+                        <div class="box">
+                            <img src="./tag/45100.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm*100mm</div>
+                            <div>•<span>标签材质：</span>深蓝底色，浅蓝底色，材料PM-01</div>
+                            <div>•<span>标签要素：</span>机房名称、机房编码、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-xudian-sb">
+            <div class="swiper-container-xudian-sb sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">设备标签</div>
+                        <div class="box">
+                            <img src="./tag/45100.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm*100mm</div>
+                            <div>•<span>标签材质：</span>深蓝底色，浅蓝底色，材料PM-01</div>
+                            <div>•<span>标签要素：</span>机房名称、机房编码、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-xudian-gp">
+            <div class="swiper-container-xudian-gp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">挂牌标签</div>
+                        <div class="box">
+                            <img src="./tag/45-60.png" alt="" style="width: 30%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm×60mm（对折标签）</div>
+                            <div>•<span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•<span>标签要素：</span>电路名称、电路编号或条码、端口连接端子信息</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-zouxian-zxj">
+            <div class="swiper-container-zouxian-zxj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">走线架标签</div>
+                        <div class="box">
+                            <img src="./tag/40-170.png" alt="" style="width: 60%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>40mm-170mm</div>
+                            <div>•<span>标签材质：</span></div>
+                            <div>•<span>标签要素：</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-zouxian-gp">
+            <div class="swiper-container-zouxian-gp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">挂牌标签</div>
+                        <div class="box">
+                            <img src="./tag/86-54.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>86mm-54mm（硬）</div>
+                            <div>•<span>标签材质：</span>聚氯乙烯PVC材质</div>
+                            <div>•<span>标签要素：</span>光缆名称、光缆规格、二维码</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-weiqian-wq">
+            <div class="swiper-container-weiqian-wq sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">尾纤标签</div>
+                        <div class="box">
+                            <img src="./tag/02F.png" alt="" style="width: 50%">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*38mm+40mm</div>
+                            <div>•<span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•<span>标签颜色：</span>
+                                <img src="./tag/颜色1.png" alt="">
+                                <img src="./tag/颜色2.png" alt="">
+                                <img src="./tag/颜色3.png" alt="">
+                                <img src="./tag/颜色4.png" alt="">
+                                <img src="./tag/颜色5.png" alt="">
+                                <img src="./tag/颜色6.png" alt="">
+                                <img src="./tag/颜色7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-weiqian-jg">
+            <div class="swiper-container-weiqian-jg sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">机柜标识</div>
+                        <div class="box">
+                            <img src="./tag/45100.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm*100mm</div>
+                            <div>•<span>标签材质：</span>深蓝底色，浅蓝底色，材料PM-01</div>
+                            <div>•<span>标签要素：</span>机房名称、机房编码、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-huanjing">
+            <div class="swiper-container-huanjing sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">环境标识</div>
+                        <div class="box">
+                            <img src="./tag/环境标识.png" alt="" style="width: 25%;">
+                        </div>
+                        <div class="footer">22cm * 30cm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">环境标识</div>
+                        <div class="box">
+                            <img src="./tag/环境标识4.png" alt="">
+                        </div>
+                        <div class="footer">12cm * 30cm</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-jigui-jg">
+            <div class="swiper-container-jigui-jg sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">机柜标签</div>
+                        <div class="box">
+                            <img src="./tag/45100.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm*100mm</div>
+                            <div>•<span>标签材质：</span>深蓝底色，浅蓝底色，材料PM-01</div>
+                            <div>•<span>标签要素：</span>机房名称、机房编码、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-jigui-sb">
+            <div class="swiper-container-jigui-sb sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">设备标签</div>
+                        <div class="box">
+                            <img src="./tag/TCM25-75.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>25mm*75mm</div>
+                            <div>•<span>标签材质：</span>白底，蓝绿色移动LOGO，材料PM-01</div>
+                            <div>•<span>标签要素：</span>设备名称、设备编号、二维码（可选）</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">设备标签</div>
+                        <div class="box">
+                            <img src="./tag/45100.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•<span>标签尺寸：</span>45mm*100mm</div>
+                            <div>•<span>标签材质：</span>深蓝底色，浅蓝底色，材料PM-01</div>
+                            <div>•<span>标签要素：</span>机房名称、机房编码、二维码（可选）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-dibiao">
+            <div class="swiper-container-dibiao sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">地面定位标识</div>
+                        <div class="box">
+                            <img src="./tag/红白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/绿白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/黄黑警示带.png" alt="" style="width: 80%;">
+                        </div>
+                        <div class="footer">50mm * 50m</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 移动大厦 -->
+        <div class="mask mask-bangong-kg">
+            <div class="swiper-container-bangong-kg sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">开关标识</div>
+                        <div class="box">
+                            <img src="./tag/20-15.png" alt="" style="width: 30%">
+                        </div>
+                        <div class="info">
+                            <div>•
+                                <span>标签尺寸：</span>20mm×15mm</div>
+                            <div>•
+                                <span>标签材质：</span>白底聚丙烯薄膜，材料PM-01</div>
+                            <div>•
+                                <span>标签要素：</span>ODM/DDM序号，从上至下，从左至右，从01开始编号</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-bangong-zc">
+            <div class="swiper-container-bangong-zc sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">资产标签</div>
+                        <div class="box">
+                            <img src="./tag/38-60.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div>•
+                                <span>标签尺寸：</span>38mm*60mm</div>
+                            <div>•
+                                <span>标签材质：</span></div>
+                            <div>•
+                                <span>标签要素：</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-jiankong-wq">
+            <div class="swiper-container-jiankong-wq sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">线缆标签</div>
+                        <div class="box">
+                            <img src="./tag/02F.png" alt="" style="width: 50%">
+                        </div>
+                        <div class="info">
+                            <div>•
+                                <span>标签尺寸：</span>25mm*38mm+40mm</div>
+                            <div>•
+                                <span>标签材质：</span>多色底聚丙烯薄膜</div>
+                            <div>•
+                                <span>标签颜色：</span>
+                                <img src="./tag/颜色1.png" alt="">
+                                <img src="./tag/颜色2.png" alt="">
+                                <img src="./tag/颜色3.png" alt="">
+                                <img src="./tag/颜色4.png" alt="">
+                                <img src="./tag/颜色5.png" alt="">
+                                <img src="./tag/颜色6.png" alt="">
+                                <img src="./tag/颜色7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-ddf-ddf">
+            <div class="swiper-container-ddf-ddf sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">DDF架标签</div>
+                        <div class="box">
+                            <img src="./tag/22.jpg" alt="" style="width:70%">
+                        </div>
+                        <div class="info">
+                            <div>•
+                                <span>标签尺寸：</span>宽16mm、22mm、28mm （根据实际卡槽宽度选择标签宽度）</div>
+                            <div>•
+                                <span>标签材质：</span>白底聚丙烯薄膜，材料PM-01</div>
+                            <div>•
+                                <span>标签要素：</span>端子所在DDF架位置、连接设备端口名称、归属网元</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!--  -------------------- 标签 -------------------- -->
+
+
+    
+    <div class="goto">导航</div>
+    <div class="rightnav">
+        <div class="item s1">城市全景</div><hr>
+        <div class="item s2">分光房</div><hr>
+        <div class="item s3">电线杆</div><hr>
+
+        <div class="item s4">直放站</div>
+            <div class="item s11 a">|- 直放站内部</div><hr>
+
+        <div class="item s5">移动大厦</div>
+            <div class="item s14 a">|- 办公室</div>
+            <div class="item s15 a">|- 移动大厅</div>
+            <div class="item s13 a">|- 数据机房</div>
+                <div class="item s16 aa">|- 机房供电处</div>
+                    <div class="item s22 aaa">|- 蓄电池组</div>
+                <div class="item s17 aa">|- 监控室</div>
+                <div class="item s18 aa">|- DDF架</div>
+                <div class="item s19 aa">|- 走线架</div>
+                <div class="item s20 aa">|- 机架机柜</div>
+                <div class="item s21 aa">|- 尾纤网线</div><hr>
+
+        <div class="item s6">光交箱</div><hr>
+        <div class="item s7">井下光缆</div><hr>
+
+        <div class="item s8">基站</div>
+            <div class="item s12 a">|- 基站内部</div>
+                <div class="item s23 aa">|- 蓄电池组</div>
+                <div class="item s24 aa">|- 走线架</div>
+                <div class="item s25 aa">|- 尾纤网线</div>
+                <div class="item s26 aa">|- 机架机柜</div><hr>
+
+        <div class="item s9">家庭</div>
+            <div class="item s10 a">|- 家用弱电柜</div>
+    </div>
+
+    <div class="pt-message">
+        <p>您的浏览器不支持 CSS animations.</p>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/yiliao.js"></script>
+    <script>
+        $(".goto").click(function(){
+            $(".rightnav").toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>

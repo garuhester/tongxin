@@ -1,0 +1,743 @@
+.pt-page .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pt-page .back .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.pt-page .back .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.pt-page .box {
+    position: absolute;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.pt-page .box .title {
+    text-align: center;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 6px #000;
+}
+
+.pt-page .box .pos {
+    position: absolute;
+    width: 1.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.pt-page .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #393939;
+    z-index: 999;
+    text-align: center;
+    height: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.pt-page .banner .back {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 5px 8px 5px 8px;
+    box-sizing: border-box;
+}
+
+.pt-page .banner .back:hover {
+    cursor: pointer;
+}
+
+.goto {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 19px;
+}
+
+.rightnav {
+    position: fixed;
+    top: 35px;
+    right: -200px;
+    height: 100%;
+    width: 200px;
+    background: #393939;
+    box-shadow: none;
+    transition: all 0.3s;
+    overflow-y: auto;
+    padding-bottom: 50px;
+}
+
+.rightnav.active {
+    right: 0;
+    box-shadow: -3px 0 10px rgba(50,50,50,0.3);
+    /*animation: navout 0.5s forwards;*/
+}
+
+@keyframes navout {
+    0%{right: -150px;}
+    50%{right: 10px;}
+    100%{right: 0;}
+}
+
+.rightnav .item {
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.rightnav .item:hover {
+    background: #525252;
+}
+
+.a {
+    margin-left: 5px;
+}
+
+.aa {
+    margin-left: 15px;
+}
+
+.aaa {
+    margin-left: 25px;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #393939;
+    transition: all 0.5s;
+}
+
+.nav .swiper-slide {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav .swiper-slide:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #fff;
+}
+
+.nav .swiper-slide.swiper-slide-active {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #FF3136;
+}
+
+.nav-down {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 41px;
+    background: #393939;
+    padding: 2px 7px 2px 7px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav-down:hover {
+    background: #4A4A4A;
+}
+
+.nav-down:active {
+    background: #4A4A4A;
+}
+
+.nav-down img {
+    transform: scale(0.7);
+}
+
+.nav.down {
+    bottom: -41px;
+}
+
+.nav-down.down {
+    bottom: 0;
+}
+
+.back-main.down {
+    bottom: 0;
+}
+
+.back-main {
+    position: fixed;
+    left: 0;
+    bottom: 41px;
+    background: #393939;
+    padding: 2px 7px 2px 7px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 300;
+    display: none;
+}
+
+.mask .sc {
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background: rgba(126, 149, 183, 0.8);
+    border-radius: .9375rem;
+    z-index: 999;
+}
+
+.mask .swiper-slide {
+    position: relative;
+    overflow-y: auto;
+}
+
+.mask .swiper-slide .title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.mask .swiper-slide .box {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.mask .swiper-slide .info {
+    padding:15px 10% 15px 10%;
+    font-size: 1.1rem;
+}
+.mask .swiper-slide .info div{
+    margin-top: 10px;
+}
+.mask .swiper-slide .info span{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.mask .swiper-slide .info img{
+    width:50px;
+}
+
+.mask .swiper-slide .footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.mask .swiper-slide .box img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.mask .swiper-slide .mbox {
+    padding-top: 15px;
+}
+
+.mask .swiper-slide .mbox .size {
+    position: relative;
+    width: 50%;
+    float: left;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+.mask .swiper-slide .mbox .size:nth-child(odd) {
+    padding: 15px 1rem 0 6rem;
+}
+
+.mask .swiper-slide .mbox .size:nth-child(even) {
+    padding: 15px 6rem 0 1rem;
+}
+
+.mask .swiper-slide .mbox .size img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.mask .swiper-slide .print-box {
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.mask .swiper-slide .print-box .left {
+    width: 50%;
+    float: left;
+    height: 200px;
+    position: relative;
+}
+
+.mask .swiper-slide .print-box .left img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 65%;
+}
+
+.mask .swiper-slide .print-box .right {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mask .swiper-slide .print-box .right ul {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    font-weight: bold;
+}
+
+.mask .swiper-slide .print-box .right ul li {
+    margin-top: 0.3rem;
+}
+
+.mask .swiper-slide .footer2 {
+    height: 30%;
+    overflow: hidden;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.mask .swiper-slide .footer2 .left {
+    width: 23%;
+    height: 100%;
+    float: left;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+
+.mask .swiper-slide .footer2 .left:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 50%;
+    background: #fff;
+}
+
+.mask .swiper-slide .footer2 .mid1,
+.mask .swiper-slide .footer2 .mid2 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding-top: 1.5rem;
+    position: relative;
+}
+
+.mask .swiper-slide .footer2 .mid1 {
+    padding-left: 0.8rem;
+}
+
+.mask .swiper-slide .footer2 .mid2 {
+    padding-left: 0.6rem;
+}
+
+.mask .swiper-slide .footer2 .mid2:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 50%;
+    background: #fff;
+}
+
+.mask .swiper-slide .footer2 .right {
+    width: 25%;
+    height: 100%;
+    float: right;
+    padding-top: 1.5rem;
+    padding-left: -15px;
+}
+
+
+
+
+/*城市全景*/
+
+.pt-page .box.quan-fgf {
+    top: 47%;
+    left: 1%;
+}
+
+.pt-page .box.quan-dxg {
+    top: 70%;
+    left: 10%;
+}
+
+.pt-page .box.quan-zfz {
+    top: 7%;
+    left: 23%;
+}
+
+.pt-page .box.quan-ydds {
+    top: 36%;
+    left: 36%;
+}
+
+.pt-page .box.quan-gjx {
+    top: 38%;
+    left: 53%;
+}
+
+.pt-page .box.quan-jxgl {
+    top: 73%;
+    left: 58%;
+}
+
+.pt-page .box.quan-jt {
+    top: 14%;
+    left: 74%;
+}
+
+.pt-page .box.quan-jz {
+    top: 45.3%;
+    left: 76%;
+}
+
+
+/*分光房*/
+
+.pt-page .box.fenguang-wq {
+    top: 55%;
+    left: 24%;
+}
+
+.pt-page .box.fenguang-jj {
+    top: 45%;
+    left: 56%;
+}
+
+.pt-page .box.fenguang-kx {
+    top: 14%;
+    left: 68%;
+}
+
+
+
+/*光交箱*/
+
+.pt-page .box.guangjiao-jj {
+    top: 18%;
+    left: 31%;
+}
+
+.pt-page .box.guangjiao-wq {
+    top: 32%;
+    left: 46%;
+}
+
+
+
+/*井下光缆*/
+
+.pt-page .box.jingxia-dp {
+    top: 43%;
+    left: 50%;
+}
+
+
+
+/*电线杆*/
+
+.pt-page .box.dianxian-dp {
+    top: 43%;
+    left: 50%;
+}
+
+
+/*家庭*/
+
+.pt-page .box.jiating-jy {
+    top: 40%;
+    left: 65%;
+}
+
+/*家用弱电箱*/
+.pt-page .box.jiayong-sb {
+    top: 60%;
+    left: 23%;
+}
+
+.pt-page .box.jiayong-xl {
+    top: 26%;
+    left: 43%;
+}
+
+.pt-page .box.jiayong-kk {
+    top: 36%;
+    left: 76%;
+}
+
+
+/*直放站*/
+
+.pt-page .box.zhifang-sb {
+    top: 15%;
+    left: 28%;
+}
+.pt-page .box.zhifang-dp {
+    top: 22%;
+    left: 60%;
+}
+.pt-page .box.zhifang-nb {
+    top: 42%;
+    left: 33%;
+}
+
+/*直放站内部*/
+
+.pt-page .box.zhifang-neibu-wq {
+    top: 17%;
+    left: 48%;
+}
+.pt-page .box.zhifang-neibu-sb {
+    top: 61%;
+    left: 57%;
+}
+.pt-page .box.zhifang-neibu-dp {
+    top: 81%;
+    left: 40%;
+}
+
+
+
+/*基站*/
+
+.pt-page .box.jizhan-nb {
+    top: 56%;
+    left: 61%;
+}
+
+/*基站内部*/
+
+.pt-page .box.jizhan-neibu-dcz {
+    top: 60%;
+    left: 15%;
+}
+.pt-page .box.jizhan-neibu-pdg {
+    top: 13%;
+    left: 27%;
+}
+.pt-page .box.jizhan-neibu-hj {
+    top: 14%;
+    left: 38%;
+}
+.pt-page .box.jizhan-neibu-zxj {
+    top: 7%;
+    left: 78%;
+}
+.pt-page .box.jizhan-neibu-wq {
+    top: 40%;
+    left: 73%;
+}
+.pt-page .box.jizhan-neibu-jg {
+    top: 69%;
+    left: 82%;
+}
+
+
+
+/*移动大厦*/
+
+.pt-page .box.yidong-sj {
+    top: 14%;
+    left: 38%;
+}
+.pt-page .box.yidong-bgs {
+    top: 40%;
+    left: 37%;
+}
+.pt-page .box.yidong-dt {
+    top: 80%;
+    left: 38%;
+}
+/*办公室*/
+
+.pt-page .box.bangong-zc {
+    top: 56%;
+    left: 25%;
+}
+.pt-page .box.bangong-kg {
+    top: 30%;
+    left: 52%;
+}
+/*移动大厅*/
+
+.pt-page .box.dating-zc {
+    top: 53%;
+    left: 8%;
+}
+.pt-page .box.dating-kg {
+    top: 45%;
+    left: 36%;
+}
+.pt-page .box.dating-hj {
+    top: 44%;
+    left: 57%;
+}
+/*数据机房*/
+
+.pt-page .box.shuju-hj {
+    top: 31%;
+    left: 12%;
+}
+.pt-page .box.shuju-wq {
+    top: 50%;
+    left: 20%;
+}
+.pt-page .box.shuju-jf {
+    top: 10%;
+    left: 25%;
+}
+.pt-page .box.shuju-jks {
+    top: 10%;
+    left: 48%;
+}
+.pt-page .box.shuju-zxj {
+    top: 38%;
+    left: 50%;
+}
+.pt-page .box.shuju-jj {
+    top: 66%;
+    left: 55%;
+}
+.pt-page .box.shuju-ddf {
+    top: 35%;
+    left: 80%;
+}
+
+/*监控室*/
+
+.pt-page .box.jiankong-zc {
+    top: 59%;
+    left: 50%;
+}
+.pt-page .box.jiankong-kg {
+    top: 25%;
+    left: 21%;
+}
+.pt-page .box.jiankong-xl {
+    top: 53%;
+    left: 87%;
+}
+
+/*机房供电处*/
+
+.pt-page .box.gongdian-pd {
+    top: 20%;
+    left: 16%;
+}
+.pt-page .box.gongdian-xdc {
+    top: 60%;
+    left: 56%;
+}
+
+/*蓄电池组*/
+
+.pt-page .box.xudian-sb {
+    top: 60%;
+    left: 66%;
+}
+.pt-page .box.xudian-gp {
+    top: 23%;
+    left: 34%;
+}
+
+/*机架机柜*/
+
+.pt-page .box.jigui-jg {
+    top: 23%;
+    left: 17%;
+}
+.pt-page .box.jigui-sb {
+    top: 33%;
+    left: 34%;
+}
+.pt-page .box.jigui-db {
+    top: 64%;
+    left: 76%;
+}
+
+/*尾纤网线*/
+
+.pt-page .box.weiqian-wq {
+    top: 58%;
+    left: 42%;
+}
+.pt-page .box.weiqian-jg {
+    top: 23%;
+    left: 48%;
+}
+
+/*DDF架*/
+
+.pt-page .box.ddf-ddf {
+    top: 58%;
+    left: 42%;
+}
+/*走线架*/
+
+.pt-page .box.zouxian-zxj {
+    top: 40%;
+    left: 42%;
+}
+.pt-page .box.zouxian-gp {
+    top: 56%;
+    left: 20%;
+}
