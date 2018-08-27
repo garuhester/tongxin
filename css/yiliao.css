@@ -673,8 +673,8 @@
     left: 21%;
 }
 .pt-page .box.jiankong-xl {
-    top: 53%;
-    left: 87%;
+    top: 10%;
+    left: 74%;
 }
 
 /*机房供电处*/
@@ -691,12 +691,12 @@
 /*蓄电池组*/
 
 .pt-page .box.xudian-sb {
-    top: 60%;
-    left: 66%;
-}
-.pt-page .box.xudian-gp {
     top: 23%;
     left: 34%;
+}
+.pt-page .box.xudian-gp {
+    top: 60%;
+    left: 77%;
 }
 
 /*机架机柜*/
