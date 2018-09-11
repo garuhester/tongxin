@@ -1,3 +1,28 @@
+.beginmask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.6);
+    z-index: 999;
+}
+
+.begintitle {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0, -50%);
+    font-size: 5rem;
+    text-align: center;
+}
+
+.beginmask .begintitle img {
+    width: 60%;
+}
+
 .pt-page .bg {
     position: absolute;
     top: 0;
@@ -91,14 +116,20 @@
 
 .rightnav.active {
     right: 0;
-    box-shadow: -3px 0 10px rgba(50,50,50,0.3);
+    box-shadow: -3px 0 10px rgba(50, 50, 50, 0.3);
     /*animation: navout 0.5s forwards;*/
 }
 
 @keyframes navout {
-    0%{right: -150px;}
-    50%{right: 10px;}
-    100%{right: 0;}
+    0% {
+        right: -150px;
+    }
+    50% {
+        right: 10px;
+    }
+    100% {
+        right: 0;
+    }
 }
 
 .rightnav .item {
@@ -247,18 +278,21 @@
 }
 
 .mask .swiper-slide .info {
-    padding:15px 10% 15px 10%;
+    padding: 15px 10% 15px 10%;
     font-size: 1.1rem;
 }
-.mask .swiper-slide .info div{
+
+.mask .swiper-slide .info div {
     margin-top: 10px;
 }
-.mask .swiper-slide .info span{
+
+.mask .swiper-slide .info span {
     margin-left: 15px;
     margin-right: 15px;
 }
-.mask .swiper-slide .info img{
-    width:50px;
+
+.mask .swiper-slide .info img {
+    width: 50px;
 }
 
 .mask .swiper-slide .footer {
@@ -408,6 +442,7 @@
 
 
 
+
 /*城市全景*/
 
 .pt-page .box.quan-fgf {
@@ -451,6 +486,7 @@
 }
 
 
+
 /*分光房*/
 
 .pt-page .box.fenguang-wq {
@@ -470,6 +506,7 @@
 
 
 
+
 /*光交箱*/
 
 .pt-page .box.guangjiao-jj {
@@ -484,12 +521,14 @@
 
 
 
+
 /*井下光缆*/
 
 .pt-page .box.jingxia-dp {
     top: 43%;
     left: 50%;
 }
+
 
 
 
@@ -501,6 +540,7 @@
 }
 
 
+
 /*家庭*/
 
 .pt-page .box.jiating-jy {
@@ -508,7 +548,9 @@
     left: 65%;
 }
 
+
 /*家用弱电箱*/
+
 .pt-page .box.jiayong-sb {
     top: 60%;
     left: 23%;
@@ -525,20 +567,24 @@
 }
 
 
+
 /*直放站*/
 
 .pt-page .box.zhifang-sb {
     top: 15%;
     left: 28%;
 }
+
 .pt-page .box.zhifang-dp {
     top: 22%;
     left: 60%;
 }
+
 .pt-page .box.zhifang-nb {
     top: 42%;
     left: 33%;
 }
+
 
 /*直放站内部*/
 
@@ -546,14 +592,17 @@
     top: 17%;
     left: 48%;
 }
+
 .pt-page .box.zhifang-neibu-sb {
     top: 61%;
     left: 57%;
 }
+
 .pt-page .box.zhifang-neibu-dp {
     top: 81%;
     left: 40%;
 }
+
 
 
 
@@ -564,32 +613,39 @@
     left: 61%;
 }
 
+
 /*基站内部*/
 
 .pt-page .box.jizhan-neibu-dcz {
     top: 60%;
     left: 15%;
 }
+
 .pt-page .box.jizhan-neibu-pdg {
     top: 13%;
     left: 27%;
 }
+
 .pt-page .box.jizhan-neibu-hj {
     top: 14%;
     left: 38%;
 }
+
 .pt-page .box.jizhan-neibu-zxj {
     top: 7%;
     left: 78%;
 }
+
 .pt-page .box.jizhan-neibu-wq {
     top: 40%;
     left: 73%;
 }
+
 .pt-page .box.jizhan-neibu-jg {
     top: 69%;
     left: 82%;
 }
+
 
 
 
@@ -599,68 +655,86 @@
     top: 14%;
     left: 38%;
 }
+
 .pt-page .box.yidong-bgs {
     top: 40%;
     left: 37%;
 }
+
 .pt-page .box.yidong-dt {
     top: 80%;
     left: 38%;
 }
+
+
 /*办公室*/
 
 .pt-page .box.bangong-zc {
     top: 56%;
     left: 25%;
 }
+
 .pt-page .box.bangong-kg {
     top: 30%;
     left: 52%;
 }
+
+
 /*移动大厅*/
 
 .pt-page .box.dating-zc {
     top: 53%;
     left: 8%;
 }
+
 .pt-page .box.dating-kg {
     top: 45%;
     left: 36%;
 }
+
 .pt-page .box.dating-hj {
     top: 44%;
     left: 57%;
 }
+
+
 /*数据机房*/
 
 .pt-page .box.shuju-hj {
     top: 31%;
     left: 12%;
 }
+
 .pt-page .box.shuju-wq {
     top: 50%;
     left: 20%;
 }
+
 .pt-page .box.shuju-jf {
     top: 10%;
     left: 25%;
 }
+
 .pt-page .box.shuju-jks {
     top: 10%;
     left: 48%;
 }
+
 .pt-page .box.shuju-zxj {
     top: 38%;
     left: 50%;
 }
+
 .pt-page .box.shuju-jj {
     top: 66%;
     left: 55%;
 }
+
 .pt-page .box.shuju-ddf {
     top: 35%;
     left: 80%;
 }
+
 
 /*监控室*/
 
@@ -668,14 +742,17 @@
     top: 59%;
     left: 50%;
 }
+
 .pt-page .box.jiankong-kg {
     top: 25%;
     left: 21%;
 }
+
 .pt-page .box.jiankong-xl {
     top: 10%;
     left: 74%;
 }
+
 
 /*机房供电处*/
 
@@ -683,10 +760,12 @@
     top: 20%;
     left: 16%;
 }
+
 .pt-page .box.gongdian-xdc {
     top: 60%;
     left: 56%;
 }
+
 
 /*蓄电池组*/
 
@@ -694,10 +773,12 @@
     top: 23%;
     left: 34%;
 }
+
 .pt-page .box.xudian-gp {
     top: 60%;
     left: 77%;
 }
+
 
 /*机架机柜*/
 
@@ -705,14 +786,17 @@
     top: 23%;
     left: 17%;
 }
+
 .pt-page .box.jigui-sb {
     top: 33%;
     left: 34%;
 }
+
 .pt-page .box.jigui-db {
     top: 64%;
     left: 76%;
 }
+
 
 /*尾纤网线*/
 
@@ -720,10 +804,12 @@
     top: 58%;
     left: 42%;
 }
+
 .pt-page .box.weiqian-jg {
     top: 23%;
     left: 48%;
 }
+
 
 /*DDF架*/
 
@@ -731,12 +817,15 @@
     top: 58%;
     left: 42%;
 }
+
+
 /*走线架*/
 
 .pt-page .box.zouxian-zxj {
     top: 40%;
     left: 42%;
 }
+
 .pt-page .box.zouxian-gp {
     top: 56%;
     left: 20%;

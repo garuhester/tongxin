@@ -4,6 +4,13 @@ window.onload = function () {
 
     //初始化
     function init() {
+        $(".goto").click(function(){
+            $(".rightnav").toggleClass("active");
+        });
+        $(".beginmask").click(function(){
+            $(this).remove();
+        });
+        
         goDiv("pt-page-quan", 22);
         $(".nav-down").click(function () {
             var img = document.querySelector(".nav-down img");
